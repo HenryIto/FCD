@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastrar - se</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: Arial,Helvetica, sans-serif;
+                background-image:linear-gradient(to right, rgb(35,147,220), rgb(17,54,71));
+            }
+            .box{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0,0,0,0.8);
+                padding: 15px;
+                border-radius: 15px;
+                width: 20%;
+            }
+            .box{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0,0,0,0.8);
+                padding: 15px;
+                border-radius: 15px;
+                width: 20%;
+            }
+            legend{
+                border: 1px solid dodgerblue;
+                padding: 10px;
+                text-align: center;
+                background-color: dodgerblue;
+                border-radius: 8px;
+            }
+            .inputUser{
+                background: none;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                color: white;
+                font-size: 15px;
+                width: 100%;
+                letter-spacing: 2px;
+            }
+            button{
+                background-color: dodgerblue;
+                width: 100%;
+                padding: 15px;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="box">
+            <form action="cadastrarUsuario.jsp" method="POST">
+                <fieldset>
+                    <legend><b>Cadastro do Usuário</b></legend><br>
+                    <label>Digite o seu Nome Completo: </label> <br>
+                    <input type="text" name="nome" class="inputUser"> <br>
+                    <br>
+                    <label>Digite o seu E-mail: </label> <br>
+                    <input type="Email" name="email" class="inputUser"> <br>
+                    <br>
+                    <label>Digite a senha: </label> <br>
+                    <input type="password" name="senha" class="inputUser"> <br>
+                    <br>
+                    <label>Digite a senha novamente: </label> <br>
+                    <input type="password" name="senha_igual" class="inputUser"> <br>
+                    <br>
+                    <button type="submit">Cadastrar-se</button>
+                </fieldset>    
+            </form>
+
+        </div>
+
+    </body>
+</html>
